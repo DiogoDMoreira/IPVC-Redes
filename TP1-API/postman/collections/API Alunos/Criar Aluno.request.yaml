@@ -1,0 +1,18 @@
+$kind: http-request
+description: ""
+url: http://localhost:3000/alunos
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"nome\": \"Rita\",\r
+
+    \  \"apelido\": \"Sousa\",\r
+
+    \  \"idCurso\": 1,\r
+
+    \  \"anoCurricular\": 1\r
+
+    }"
+order: 4051442814631053

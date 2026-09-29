@@ -1,0 +1,12 @@
+workspace:
+  id: c85624c7-c96a-447b-a83a-5969fd99e9ce
+localResources:
+  specs:
+    - ../postman/specs/Testt/Testt.json
+    - ../postman/specs/API/API.json
+    - ../D:/IPVC-EI/Redes/TP1-API/tests/API.json
+resourceNameMappings:
+  specs:
+    - ../postman/specs/Testt/Testt.json: Testt
+    - ../postman/specs/API/API.json: API
+    - ../tests/.json: API.json

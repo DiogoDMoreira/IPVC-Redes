@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3000/cursos
+method: GET
+order: 3954161735570714

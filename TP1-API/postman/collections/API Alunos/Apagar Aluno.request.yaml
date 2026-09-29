@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3000/alunos/4
+method: DELETE
+order: 4418190290149677

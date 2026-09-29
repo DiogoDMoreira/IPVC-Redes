@@ -1,0 +1,105 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/alunos": {
+      "get": {
+        "summary": "Listar Alunos",
+        "responses": {}
+      },
+      "post": {
+        "summary": "Criar Aluno",
+        "responses": {},
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "apelido": {
+                    "type": "string"
+                  },
+                  "idCurso": {
+                    "type": "integer"
+                  },
+                  "anoCurricular": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Rita",
+                "apelido": "Sousa",
+                "idCurso": 1,
+                "anoCurricular": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cursos": {
+      "get": {
+        "summary": "Listar Cursos",
+        "responses": {}
+      }
+    },
+    "/alunos/1": {
+      "get": {
+        "summary": "Listar Aluno 1",
+        "responses": {}
+      }
+    },
+    "/alunos/4": {
+      "put": {
+        "summary": "Editar Aluno",
+        "responses": {},
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "apelido": {
+                    "type": "string"
+                  },
+                  "idCurso": {
+                    "type": "integer"
+                  },
+                  "anoCurricular": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Rita",
+                "apelido": "Sousa",
+                "idCurso": 2,
+                "anoCurricular": 2
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Apagar Aluno",
+        "responses": {}
+      }
+    }
+  }
+}
